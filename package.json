@@ -18,6 +18,7 @@
   "homepage": "https://github.com/otrojota/geop-servimet#readme",
   "dependencies": {
     "geop-base-proveedor-capas": "git+https://github.com/otrojota/geop-base-proveedor-capas.git",
+    "moment-timezone": "^0.5.27",
     "mongodb": "^3.5.2",
     "request": "^2.88.0"
   }
