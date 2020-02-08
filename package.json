@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/otrojota/geop-servimet#readme",
   "dependencies": {
-    "geop-base-proveedor-capas": "file:../geop-base-proveedor-capas",
+    "geop-base-proveedor-capas": "git+https://github.com/otrojota/geop-base-proveedor-capas.git",
     "mongodb": "^3.5.2",
     "request": "^2.88.0"
   }
