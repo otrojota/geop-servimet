@@ -1,0 +1,24 @@
+{
+  "name": "geop-servimet",
+  "version": "1.0.0",
+  "description": "Proveedor Estaciones SERVIMET",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otrojota/geop-servimet.git"
+  },
+  "author": "Jota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otrojota/geop-servimet/issues"
+  },
+  "homepage": "https://github.com/otrojota/geop-servimet#readme",
+  "dependencies": {
+    "geop-base-proveedor-capas": "file:../geop-base-proveedor-capas",
+    "mongodb": "^3.5.2",
+    "request": "^2.88.0"
+  }
+}

@@ -1,0 +1,3211 @@
+{
+    "webServer":{
+        "http":{"port":8083}
+    },
+    "timeZone":"America/Santiago",
+    "mongoDB":{
+        "url":"mongodb://localhost:27017",
+        "database":"servimet"
+    },
+    "estaciones":[{
+        "codigo":"pisagua",
+        "lat":-19.5958333333,
+        "lng":-70.2113888889,
+        "nombre":"Alcaldía de Mar - Pisagua",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/pisagua/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"iquique",
+        "lat":-20.2111111111,
+        "lng":-70.1533333333,
+        "nombre":"Capitanía de Puerto - Iquique",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/iquique/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"patache",
+        "lat":-20.7994444444,
+        "lng":-70.1877777778,
+        "nombre":"Capitanía de Puerto - Patache",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/patache/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"mejillones",
+        "lat":-23.0988888889,
+        "lng":-70.4527777778,
+        "nombre":"Capitanía de Puerto - Mejillones",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/mejillones/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"antofagasta",
+        "lat":-23.6461111111,
+        "lng":-70.4088888889,
+        "nombre":"Faro Punta Molo - Antofagasta",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/antofagasta/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"taltal",
+        "lat":-25.4075,
+        "lng":-70.4883333333,
+        "nombre":"Capitanía de Puerto - Taltal",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/taltal/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"chanaral",
+        "lat":-26.3511111111,
+        "lng":-70.6375,
+        "nombre":"Capitanía de Puerto - Chañaral",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/chanaral/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"caldera",
+        "lat":-27.0644444444,
+        "lng":-70.8247222222,
+        "nombre":"Capitanía de Puerto - Caldera",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/caldera/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"pascua",
+        "lat":-27.1497222222,
+        "lng":-109.436944444,
+        "nombre":"Capitanía de Puerto - Hanga Roa",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/pascua/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"huasco",
+        "lat":-28.4613888889,
+        "lng":-71.2263888889,
+        "nombre":"Capitanía de Puerto - Huasco",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/huasco/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"tortuga",
+        "lat":-29.9347222222,
+        "lng":-71.3416666667,
+        "nombre":"Faro Punta Tortuga - Coquimbo",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/tortuga/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"losvilos",
+        "lat":-31.9091666667,
+        "lng":-71.5136111111,
+        "nombre":"Capitanía de Puerto - Los Vilos",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/losvilos/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"quintero",
+        "lat":-32.7761111111,
+        "lng":-71.5266666667,
+        "nombre":"Capitanía de Puerto - Quintero",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/quintero/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"valparaiso",
+        "lat":-33.0383333333,
+        "lng":-71.6266666667,
+        "nombre":"Faro Punta Molo - Valparaíso",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/valparaiso/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"pichilemu",
+        "lat":-34.385,
+        "lng":-72.0083333333,
+        "nombre":"Capitanía de Puerto - Pichilemu",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/pichilemu/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"talcahuano",
+        "lat":-36.7080555556,
+        "lng":-73.1127777778,
+        "nombre":"Gobernación Marítima - Talcahuano",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/talcahuano/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"lebu",
+        "lat":-37.6047222222,
+        "lng":-73.6538888889,
+        "nombre":"Capitanía de Puerto - Lebu",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/lebu/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"lota",
+        "lat":-37.6047222222,
+        "lng":-73.1588888889,
+        "nombre":"Capitanía de Puerto - Lota",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/lota/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"carahue",
+        "lat":-38.7883333333,
+        "lng":-73.3972222222,
+        "nombre":"Capitanía de Puerto - Carahue (Puerto Saavedra)",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/carahue/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"cenmeteopmo",
+        "lat":-41.4866666667,
+        "lng":-72.9511111111,
+        "nombre":"Gobernación Marítima - Puerto Montt",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/cenmeteopmo/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"quinzona",
+        "lat":-41.48667,
+        "lng":-72.95389,
+        "nombre":"Base Naval - Puerto Montt",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/quinzona/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"ancud",
+        "lat":-41.8666666667,
+        "lng":-73.8308333333,
+        "nombre":"Capitanía de Puerto - Ancud",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/ancud/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"quemchi",
+        "lat":-42.1447222222,
+        "lng":-73.4730555556,
+        "nombre":"Capitanía de Puerto - Quemchi",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/quemchi/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"melinka",
+        "lat":-43.8963888889,
+        "lng":-73.7488888889,
+        "nombre":"Capitanía de Puerto - Melinka",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/melinka/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }, {
+        "codigo":"aguirre",
+        "lat":-45.1644444444,
+        "lng":-73.5216666667,
+        "nombre":"Capitanía de Puerto - Aguirre",
+        "url":"http://web.directemar.cl/met/jturno/estaciones/aguirre/realtime.txt",
+        "variables":[{
+            "codigo":"TEMP",
+            "nombre":"Temperatura",
+            "indice":3,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/temperatura.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"HUM_REL",
+            "nombre":"Humedad Relativa",
+            "indice":4,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/humedad.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"%",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PUNTO_ROCIO",
+            "nombre":"Punto de Rocío",
+            "indice":5,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/punto-rocio.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"VEL_MEDIA_VIENTO",
+            "nombre":"Velocidad Media Viento",
+            "indice":6,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/velocidad-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"m/s",
+                "decimales":2
+            }
+        }, {
+            "codigo":"DIR_VIENTO",
+            "nombre":"Dirección Viento",
+            "indice":8,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/direccion-viento.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"º",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_DIA",
+            "nombre":"Precipitaciones Día",
+            "indice":10,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"PRESION_ATM",
+            "nombre":"Presión Atmosférica",
+            "indice":11,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/presion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"hp",
+                "decimales":2
+            }
+        }, {
+            "codigo":"PRECIP_ANO",
+            "nombre":"Precipitaciones Acumuladas Año",
+            "indice":21,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/precipitaciones.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"mm",
+                "decimales":0
+            }
+        }, {
+            "codigo":"SENS_TERMICA",
+            "nombre":"Sensación Térmica",
+            "indice":25,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/sensacion.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_CALOR",
+            "nombre":"Índice Calor",
+            "indice":42,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/indice-calor.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"ºC",
+                "decimales":2
+            }
+        }, {
+            "codigo":"INDICE_UV",
+            "nombre":"Índice Radiación UV",
+            "indice":44,
+            "formatos":["serieTiempo", "valorEnPunto"],
+            "icono":"img/variables/radiacion-uv.svg",
+            "opciones":{
+                "temporal":true,
+                "unidad":"uv",
+                "decimales":2
+            }
+        }]
+    }]
+}
