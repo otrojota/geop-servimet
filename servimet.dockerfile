@@ -1,5 +1,5 @@
-# docker build -f servimet.dockerfile -t otrojota/geoportal:servimet-0.23 .
-# docker push otrojota/geoportal:servimet-0.23
+# docker build -f servimet.dockerfile -t otrojota/geoportal:servimet-0.27 .
+# docker push otrojota/geoportal:servimet-0.27
 #
 FROM otrojota/geoportal:gdal-nodejs
 WORKDIR /opt/geoportal/geop-servimet
